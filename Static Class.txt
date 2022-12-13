@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication56
+{
+    static class Mymath 
+    {
+        public static int result;
+        public static int cube(int n) 
+        { 
+            result = n * n * n;
+            return result;
+        }
+        static Mymath() 
+        {
+            Console.WriteLine(" Static Constructor Invoked... ");
+        }
+    }
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+           
+            Console.WriteLine(" Cube of 3 is " + Mymath.cube(3));
+            Console.Read();
+
+        
+        }
+    }
+}

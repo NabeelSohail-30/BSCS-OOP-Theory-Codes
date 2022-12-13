@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication45
+{
+    class Vehicle
+    {
+        public static string name="Civic";
+    }
+    
+    class TestVehicle
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Vehicle.name);
+            Console.Read();
+
+        }
+    }
+}

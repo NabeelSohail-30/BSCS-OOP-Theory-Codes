@@ -1,0 +1,24 @@
+using System;
+
+namespace calculator
+{
+    class Findmax
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            string name;
+            Console.WriteLine(" Enter Name of User: ");
+            name = Console.ReadLine();
+            Console.WriteLine(" Enter the value of  num1 : ");
+            a = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine(" Enter the value of  num2 : ");
+            b = Convert.ToInt16(Console.ReadLine());
+            if (a > b)
+                Console.WriteLine("The Max value is : {0}",a);
+            else
+                Console.WriteLine("The Max value is : {0}", b);
+                    Console.Read();        
+        }
+    }
+}

@@ -1,0 +1,36 @@
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication45
+{
+    class Numbers
+    {
+        public int findmin1(int num1, int num2)
+        {
+            int min = num2;
+            if (num1 < num2) { min = num1; }
+            return min;
+        }
+        public static int findmin2(int num1, int num2)
+        {
+            int min = num2;
+            if (num1 < num2) { min = num1; }
+            return min;
+        }
+     }
+    
+    class testnumber
+    {
+        static void Main(string[] args)
+        {
+            int min;
+            min = Numbers.findmin2(4, 6);
+            Console.WriteLine(" Minimum Value is : "+min);
+            Console.Read();
+           
+
+        }
+    }
+}

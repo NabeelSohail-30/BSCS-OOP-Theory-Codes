@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication43
+{
+    class test 
+    {
+        public test() 
+        {
+            Console.WriteLine(" Default Constructor invoked.... ");
+        }
+        public void testing() 
+        {
+            Console.WriteLine(" simple method invoked.... ");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            test t = new test();
+            t.testing();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

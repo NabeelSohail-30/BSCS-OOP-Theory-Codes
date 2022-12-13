@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication43
+{
+    class car 
+    {
+        public string name;//create a field...
+        public car() 
+        {
+            Console.WriteLine(" Default Constructor invoked... ");
+            name = "Civic 2020";//set the initial value for name...
+        }
+        public void displaycarinfo() 
+        {
+            Console.WriteLine(" Car Name: "+name);
+        }   
+    }
+
+    class testcar
+    {
+        static void Main(string[] args)
+        {
+            car honda = new car();//this will call the constructor
+             honda.displaycarinfo();
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Max Method  "+Math.Max(5, 10));  
+      Console.WriteLine("Min Method  "+Math.Min(5, 10));  
+            Console.WriteLine("Sqrt Method  "+Math.Sqrt(25));  
+            Console.WriteLine("Abs Method  "+Math.Abs(-4.7));  
+            Console.WriteLine("Round Method  "+Math.Round(9.5));
+      double val1 = 79.89;
+      Console.WriteLine("Result Floor= " + Math.Floor(val1));
+            double val2 = 9.01;
+      Console.WriteLine("Result Ceiling= " + Math.Ceiling(val2));
+
+
+      
+     }
+  }
+}

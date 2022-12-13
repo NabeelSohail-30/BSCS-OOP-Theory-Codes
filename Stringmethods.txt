@@ -1,0 +1,74 @@
+C# String Compare() Method Example
+1. using System;
+2. public class StringExample
+3. {
+4. public static void Main(string[] args)
+5. {
+6. string s1 = "hello";
+7. string s2 = "hello";
+8. string s3 = "csharp";
+9. string s4 = "mello";
+10.
+11. Console.WriteLine(string.Compare(s1,s2));
+12. Console.WriteLine(string.Compare(s2,s3));
+13. Console.WriteLine(string.Compare(s3,s4));
+14. }
+15. }
+
+C# String Insert() Method Example
+1. using System;
+2. public class StringExample
+3. {
+4. public static void Main(string[] args)
+5. {
+6. string s1 = "Hello C#";
+7. string s2 = s1.Insert(5,"-");
+8. Console.WriteLine(s2);
+9. }
+10. }
+
+C# String IndexOf() Method Example
+1. using System;
+2. public class StringExample
+3. {
+4. public static void Main(string[] args)
+5. {
+6. string s1 = "Hello C#";
+7. int index = s1.IndexOf('e');
+8. Console.WriteLine(index);
+9. }
+10. }
+
+C# String ToUpper() Method Example
+1. using System;
+2.
+3. public class StringExample
+4. {
+5. public static void Main(string[] args)
+6. {
+7. string s1 = "Hello C#";
+8. string s3 = s1.ToUpper();
+9. Console.WriteLine(s3);
+10. }
+11. }
+
+C# String Replace() Method Example
+1. using System;
+2. public class StringExample
+3. {
+4. public static void Main(string[] args)
+5. {
+6. string s1 = "Hello F#";
+7. string s2 = s1.Replace('F','C');
+8. Console.WriteLine(s2);
+9. }
+10. }
+
+
+
+
+
+
+
+
+

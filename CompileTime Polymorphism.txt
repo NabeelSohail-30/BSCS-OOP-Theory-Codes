@@ -1,0 +1,40 @@
+ using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication61
+{
+    class sum
+    {   // compile-time polymorphism can be achieved by using method overloading
+        public void addnumbers(int a, int b) 
+        {
+            Console.WriteLine("addnumbers(int a, int b)"   +(a+b));
+        }
+        public void addnumbers(int a, int b, int c)//1 method overloading
+        {
+            Console.WriteLine("addnumbers(int a, int b, int c)"   + (a + b + c));
+        }
+        public void addnumbers(double a, int b)// 2 method overloading
+        {
+            Console.WriteLine("addnumbers(double a, int b)"   + (a + b));
+        }
+        public void addnumbers(double a, double b)//3 method overloading
+        {
+            Console.WriteLine("addnumbers(double a, double b)"    + (a + b));
+        }
+        public void addnumbers(int a, double b, int c)// 4 method overloading
+        {
+            Console.WriteLine("addnumbers(int a, double b, int c)"   + (a + b + c));
+        }   
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            sum s = new sum();
+            s.addnumbers(5.5,5);
+            Console.Read();
+        }
+    }
+}

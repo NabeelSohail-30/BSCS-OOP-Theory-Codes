@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication60
+{
+    class Employee 
+    {
+        public float salary = 4000;
+    }
+    class Programmer : Employee 
+    {
+        public float bonus = 3433;
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Programmer pr = new Programmer();
+            Console.WriteLine( "Salary"   +pr.salary);
+            Console.WriteLine( "Bonus"  +pr.bonus);
+            Console.Read();
+        }
+    }
+}

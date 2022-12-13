@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication36
+{
+    class student
+    {
+        int id;
+        string name;
+
+        static void Main(string[] args)
+        {
+            student s = new student();
+            s.id = 123;
+            s.name = " ALi Ahmed";
+            Console.WriteLine(s.id);
+            Console.WriteLine(s.name);
+            Console.Read();
+        
+        }
+    }
+}

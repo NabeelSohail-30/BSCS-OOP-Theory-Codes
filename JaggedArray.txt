@@ -1,0 +1,24 @@
+using System;
+namespace ConsoleApplication56
+{
+    class Program
+    {        
+        static void Main(string[] args)
+        {
+            int[][] numbers = new int[2][];// jagged array declaration 
+            numbers[0] = new int[5] {33,43,65,76,87};//initialize the array
+            numbers[1] = new int[6] { 33, 22, 44, 55, 76, 87 };
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                for (int x = 0; x < numbers[i].Length; x++)
+                {
+                    Console.WriteLine(numbers[i][x] + " ");
+                }
+            }
+            
+
+            Console.Read(); 
+        }
+    }
+}

@@ -1,0 +1,64 @@
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication43
+{
+    class car 
+    {
+        public string name;
+        public string color;
+        public int year;
+        public car(string modelname,string modelcolor, int modelyear) 
+        {
+            name = modelname;
+            color = modelcolor;
+            year = modelyear;
+        
+        }
+        public void displaycarinfo() 
+        {
+            Console.WriteLine("Name :"+name+" Color : "+color+" Year : "+year);
+        }
+
+    }
+
+    class testcar
+    {
+        static void Main(string[] args)
+        {
+            int year;
+            Console.WriteLine("Enter Year: ");
+            year = Convert.ToInt16(Console.ReadLine());
+
+            car honda = new car("civic","White",year);
+            honda.displaycarinfo();
+                    
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

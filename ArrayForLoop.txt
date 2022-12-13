@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication56
+{
+    class Program
+    {        
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[5] {33,21,54,67,54};
+            for (int a = 0; a < numbers.Length; a++ )
+            {
+                Console.WriteLine(numbers[a]);
+            }
+            Console.Read();
+
+        
+        }
+    }
+}

@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication36
+{
+    class Employee 
+    {
+        int id;
+        string name;
+        int salary;
+        int tax_am;
+      	public void insertvalue(int i, string n, int sal) 
+        {
+            id = i;
+            name = n;
+            salary = sal;
+        }
+        public void tax() 
+        {
+            tax_am = salary / 100 * 25;
+        }
+        public void display() 
+        {
+            Console.WriteLine("ID : "+id+ " Name : "+name+" Salary : "+salary+" Tax : "+tax_am);
+        
+        }
+    }
+    class TestEMPLOYEE
+    {
+
+        static void Main(string[] args)
+        {
+
+            Employee e1 = new Employee();
+            e1.insertvalue(11, "Ali Raza", 10000);
+            e1.tax();
+            e1.display();
+            Employee e2 = new Employee();
+            e2.insertvalue(22, "Zain", 20000);
+            e2.tax();
+            e2.display();
+            Console.Read();
+        }
+    }
+}

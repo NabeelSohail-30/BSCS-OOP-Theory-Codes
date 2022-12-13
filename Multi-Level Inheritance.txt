@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication60
+{
+    class A 
+    {
+        public string name;
+        public void displayname() 
+        {
+            Console.WriteLine(" Name : "+name);
+        }
+    }
+    class B : A
+    {
+        public string location;
+        public void displaylocation() 
+        {
+            Console.WriteLine("Location : "+location);
+        }
+    }
+    class C : B
+    {
+        public int salary;
+        public void displaysalary() 
+        {
+            Console.WriteLine("Salary : "+salary);
+        }
+    }
+    class D : C
+    {
+        public int age;
+        public void displayage() 
+        {
+            Console.WriteLine(" Age : "+age);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            D d = new D();
+            d.name = "Ikrama";
+            d.location = "Islamabad";
+            d.salary = 3533;
+            d.age = 65;
+            d.displayname();
+            d.displaysalary();
+            d.displayage();
+            d.displaylocation();
+            Console.Read();
+        }
+    }
+}

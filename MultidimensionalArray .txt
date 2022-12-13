@@ -1,0 +1,33 @@
+using System;
+namespace ConsoleApplication52
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[,] numbers = new int[3, 3]
+                                    { // c0 c1 c2
+                                        {55,33,21},  //ro
+                                        {22,33,22},  //r1
+                                        {43,56,76}   //r2
+          
+                                    };//declaration and initialization
+            for(int r = 0; r < 3; r++ )
+            {
+                for (int c = 0; c < 3; c++ )
+                { 
+                    if(numbers[r,c]%2==0)
+                    {
+                        Console.WriteLine("Number is Even : "+numbers[r,c]);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Number is Odd : " + numbers[r, c]);
+                    }
+                }
+            }
+            
+            Console.ReadLine();
+        }
+    }
+}

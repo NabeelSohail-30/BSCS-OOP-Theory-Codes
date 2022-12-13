@@ -1,0 +1,13 @@
+
+C# String Replace() Method Example
+ using System;
+ public class StringExample
+ {
+ public static void Main(string[] args)
+ {
+	String s = "aaa";
+	Console.WriteLine("The initial string: '{0}'", s);
+	s = s.Replace("a", "b").Replace("b", "c").Replace("c", "d");
+	Console.WriteLine("The final string: '{0}'", s);
+ }
+ }

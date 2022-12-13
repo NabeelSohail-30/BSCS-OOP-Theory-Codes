@@ -1,0 +1,35 @@
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication45
+{
+    class user 
+    {
+        public void test() 
+        {
+            Console.WriteLine(" A Simple Method..... ");
+        }
+        public user() 
+        {
+            Console.WriteLine(" A Default Constructor... ");
+        }
+        static user()
+        {
+            Console.WriteLine(" A Static Constructor... ");
+        }
+    }
+    
+    
+    class testuser
+    {
+        static void Main(string[] args)
+        {
+            user u = new user();
+            u.test();
+            Console.Read();
+
+        }
+    }
+}

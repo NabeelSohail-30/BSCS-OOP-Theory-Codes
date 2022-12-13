@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication56
+{
+    class Employee 
+    {
+        public int id;
+        public string name;
+        public int salary;
+        public Employee(int id, string name, int salary) 
+        {
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+        }
+        public void display() 
+        {
+            Console.WriteLine(id+ " " +name+ " " +salary);        
+        }
+    }
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+
+            Employee ali = new Employee(11," Ali Ahmed ",1000);
+            ali.display();
+            Employee Zia = new Employee(12, " Zia Khan ", 3000);
+            Zia.display();
+            Employee Asad = new Employee(13, " Asad Ahmed ", 4000);
+            Asad.display();
+            Console.Read();
+
+        
+        }
+    }
+}

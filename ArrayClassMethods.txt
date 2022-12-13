@@ -1,0 +1,31 @@
+using System;
+namespace ConsoleApplication56
+{
+    class Program
+    {        
+        static void Main(string[] args)
+        {
+            int[] numbers = new int[5] {33,21,54,67,54};
+            Console.WriteLine(" Initial Array Elements  ");
+            foreach(int a in numbers)
+            {
+                Console.WriteLine(a);
+            }
+            Array.Sort(numbers);
+            Console.WriteLine(" Elements After Sort ");
+            foreach (int a in numbers)
+            {
+                Console.WriteLine(a);
+            }
+            Array.Reverse(numbers);
+            Console.WriteLine(" Elements After Reverse ");
+            foreach (int a in numbers)
+            {
+                Console.WriteLine(a);
+            }
+            Console.Read();
+
+        
+        }
+    }
+}

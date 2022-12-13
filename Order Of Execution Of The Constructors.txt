@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ConsoleApplication60
+{
+    class User 
+    {
+        public static string name;
+        public string location;
+        public void displayuserinfo() 
+        {
+            Console.WriteLine(" Name : "+name);
+            Console.WriteLine(" Location : "+location);
+        }
+        public User() 
+        {
+            Console.WriteLine("Parent (Base) class constructor invoked..."); 
+        }
+    }
+    class details : User
+    {
+        public int salary;
+        public void displaysalary()
+        {
+            Console.WriteLine(" Salary : " + salary);
+        }
+        public details()
+        {
+            Console.WriteLine(" Child Class Constructor invoked...");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            details d = new details();
+            details.name = "Ali Ahmed";
+            d.location = "Karachi";
+            d.salary = 2324;
+            d.displayuserinfo();
+            d.displaysalary();
+            Console.Read();
+        }
+    }
+}

@@ -1,0 +1,58 @@
+
+using System;
+using System.Text;
+namespace ConsoleApplication61
+{
+    //run time polymorphism can be achieved by using method overriding 
+    class shape
+    {
+        public virtual void Area(int a)
+        {
+            Console.WriteLine("Area Calculator");
+        }
+        public void test()
+        {
+            Console.WriteLine("Area Calculator");
+        }
+    }
+    class circle : shape
+    {
+        public override void Area(int a)//1 method overriding 
+        {
+            Console.WriteLine(" Circle Area ");
+            int r;
+            double A;
+            Console.WriteLine(" Enter the Radius :");
+            r = Convert.ToInt16(Console.ReadLine());
+            A = (314) * r * r;
+            Console.WriteLine(" Area of Circle : " + A);
+        }
+    }
+    class rect : shape
+    {
+        public override void Area(int a)//2 method overriding 
+        {
+            Console.WriteLine(" Rectangle Area ");
+            int A, length, width;
+            Console.WriteLine(" Enter Length ");
+            length = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine(" Enter Width ");
+            width = Convert.ToInt16(Console.ReadLine());
+            A = length * width;
+            Console.WriteLine(" Area of Rectangle : " + A);
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //circle c = new circle(); 
+            //c.Area(); 
+            rect r = new rect();
+            r.Area(1);
+            r.test();
+
+            Console.Read();
+        }
+    }
+}

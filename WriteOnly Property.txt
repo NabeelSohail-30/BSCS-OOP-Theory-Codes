@@ -1,0 +1,28 @@
+using System;
+
+namespace Employee
+{
+    class Employee 
+    {
+        private int salary = 2000;//Original Value will remain same
+        public int salaryaccess //WriteOnly Property
+        {
+            set { salary = value; }    
+        }
+        public void calBonus() 
+        {
+            Console.WriteLine(" Bonus :"+salary/100*25);
+        }
+     
+    }
+    class Bonus
+    {
+        static void Main(string[] args)
+        {
+            Employee Ali = new Employee();
+            Ali.salaryaccess = 1500;//set
+            Ali.calBonus();
+            Console.Read();
+        }
+    }
+}

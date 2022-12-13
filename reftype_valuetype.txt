@@ -1,0 +1,49 @@
+using System;
+
+namespace lec3
+{
+    class TestClass
+    {
+        static void Main(string[] args)
+        {
+            car honda = new car("CITY", 2021);
+            honda.display();
+            
+            car c2 = new car();//CIVIC, 2022
+            //c2.display();
+            honda.RefType(c2); //changes value of c2
+            honda.display();
+            //c2.display();
+            //car c3 = new car();
+            //Console.WriteLine("Hello World!");
+        }
+    }
+    class car
+    {
+        string name;
+        int model;
+        public void RefType(car c1)
+        {
+            c1.name = "COROLLA";
+            c1.model = 2021;
+        }
+        public car()  //Default constructor 
+        {
+            name = "CIVIC";
+            model = 2022;
+        }
+        public car(string a, int b)   //Parameterized Constructor
+        {
+            //Console.WriteLine("Parameterized Constructor invoked");
+            name = a;
+            model = b;
+        }
+        
+        public void display()
+        {
+            Console.WriteLine("Car name: " + name);
+            Console.WriteLine("Model: "+ model);
+        }
+        
+    }
+}
